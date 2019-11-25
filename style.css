@@ -1,0 +1,64 @@
+:root {
+    --rowNum: 5;
+    --colNum: 5;
+  }
+
+
+#board{
+    display: grid;
+    height: 80vh;
+    grid-template-rows: repeat(var(--rowNum), 1fr);
+    grid-template-columns: repeat(var(--colNum), 1fr);
+    justify-content: center;
+
+}
+
+.cell{
+    height: auto;
+    min-height: 60px;
+    border: black solid 1px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#scores{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 1fr;
+    width: 100vw;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#score1{
+    justify-content: left;
+    margin: 10px;
+    color: green;
+}
+
+#score2{
+    justify-content: right;
+    margin: 10px;
+    color: red;
+}
+
+#bottom{
+    display: grid;
+    grid-template-areas: 'i i s s s s';
+    height: 50px;
+}
+
+button{
+    background-color: green;
+    grid-area: 's';
+    width: 50%;
+}
+
+input{
+    grid-area: 'i';
+}
+
+.wall{
+    background-color: brown;
+}
