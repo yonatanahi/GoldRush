@@ -5,7 +5,8 @@ class GoldRush extends Matrix{
         this.columns = columns
         this.alter(0, 0, 1)
         this.alter(rows - 1,columns - 1, 2)
-        this.number = Math.floor(rows * columns / (rows + columns))
+        this.number = Math.floor(rows * columns * 0.25)
+        //rows * columns / (rows + columns)
         
         this.addCoins(rows, columns, this.number) 
         this.addWalls(rows, columns, this.number) 

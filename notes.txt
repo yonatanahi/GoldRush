@@ -1,0 +1,5 @@
+1. to add maze generation algorithm
+2. to improve the css problem
+3. to check the input: only positive integers
+4. to improve checkscore function - when there is no coins 
+5. to fix moveplayer function

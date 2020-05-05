@@ -33,6 +33,7 @@ class Matrix{
 
     alter(rowNum, colNum, updatedValue){
         this.matrix[rowNum][colNum] = updatedValue
+        console.log({rowNum, colNum})
     }
 
     findCoordinate(value){
